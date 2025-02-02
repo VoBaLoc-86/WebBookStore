@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm 3</title>
+    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <script src="https://kit.fontawesome.com/038a51cfcd.js" crossorigin="anonymous"></script>
+    <script lang="JavaScript">
+        function changeType(){
+            var selectedOption = document.getElementById("theloai").value;
+            window.location.href = selectedOption;
+        }
+    </script>
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <div class="Layout">
+        <div id="header">
+            <a href="Home.html"><img src="/images/Logonew.png" alt="Logo"></a>
+            <div id="header_nav">
+                <ul>
+                    <li><a href="Home.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="intro.html">Giới Thiệu</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div id="header_icon">
+                <div class="items">
+                    <a href=""><img src="/images/ring.png" alt="Ring"></a>
+                </div>
+                <div class="items">
+                    <a href="cart.html"><img src="/images/BuyIcon.png" alt="BuyIcon"></a>
+                </div>
+                <div class="items">
+                    <a href=""><img src="/images/Person.png" alt="PersonIcon"></a>
+                </div>  
+            </div>
+            <div id="nav_mobile">
+                <label for="test" class="nav_bars">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </label>
+                <input type="checkbox" hidden id="test" name="test">
+                <label for="test" id="overlay"></label>
+                <div id="nav_list_bars">
+                    <label for="test" id="close">
+                        <i class="fa-solid fa-xmark fa-2x"></i>
+                    </label>
+                    <div id="nav_icon">
+                        <div class="nav_bar_icon">
+                            <a href=""><img src="/images/Person.png" alt="PersonIcon"></a>
+                        </div>
+                        <div class="nav_bar_icon">
+                            <a href="cart.html"><img src="/images/BuyIcon.png" alt="BuyIcon"></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li><a href="Home.html">Trang Chủ</a></li>
+                        <li><a href="products.html">Sản Phẩm</a></li>
+                        <li><a href="intro.html">Giới Thiệu</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bgcolor">
+            <h1>Welcome to Website</h1>
+        </div>
+        <div id="list_products">
+            <h2>Danh sách sản phẩm</h2>
+            <div style="margin-left: 15%;" class="selectProducts">
+                <label for="" style="font-size: 18px; font-weight: bold;">Thể loại</label>
+                <select name="theloai" id="theloai" style="margin-left: 10px; height: 20px;font-size: 15px;" onchange="changeType()">
+                    <option value="products.html">Cổ Tích</option>
+                    <option value="products2.html" >Văn Học</option>
+                    <option value="products3.html" selected="selected">Tiểu Thuyết</option>
+                    <option value="products4.html">Truyện Tranh</option>
+                </select>
+            </div>
+            <ul id="products_book">
+                <div class="products" id="tieuthuyet1">
+                    <img src="/images/tieuthuyet1.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center; margin: 10px auto 5px auto;"><strong style="text-transform: uppercase;">Tôi thấy hoa vàng trên cỏ xanh</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">
+                                "Tôi thấy hoa vàng trên cỏ xanh" của Nguyễn Nhật Ánh là câu chuyện về tuổi thơ, tình bạn và những giá trị nhân văn.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet1')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet2">
+                    <img src="/images/tieuthuyet2.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Harry Potter</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">"Harry Potter" là loạt tiểu thuyết phép thuật nổi tiếng của J.K. Rowling, mô tả cuộc hành trình phiêu lưu của Harry Potter, một phù thủy trẻ, cùng những người bạn tại trường pháp thuật Hogwarts.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet2')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet3">
+                    <img src="/images/tieuthuyet3.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Kiếp này ta tìm thấy nhau</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">"Kiếp này ta tìm thấy nhau" là một câu chuyện tình yêu trong sáng và ngọt ngào của nhà văn Nguyễn Nhật Ánh, đặt trong bối cảnh vùng quê Việt Nam. </p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet3')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet4">
+                    <img src="/images/tieuthuyet4.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Mắc Biếc</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">
+                                "Mắc Biếc" của nhà văn Nguyễn Nhật Ánh là một trong những tác phẩm văn học nổi tiếng của văn học Việt Nam. Cuốn sách xoay quanh câu chuyện tình yêu trong sáng, dễ thương giữa hai nhân vật chính là Thắng và Mai.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet4')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet5">
+                    <img src="/images/tieuthuyet5.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Quê Nhà</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">"Quê Nhà" của Tô Hoài là một tác phẩm văn học đầy cảm xúc, khắc họa hình ảnh về cuộc sống quê hương, những kỷ niệm thơ ấu đáng nhớ, và tình cảm thiêng liêng dành cho quê hương.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet5')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet6">
+                    <img src="/images/tieuthuyet6.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Ông Già và Biển cả</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">
+                                "Ông già và biển cả" của Ernest Hemingway là một tác phẩm văn học kinh điển, kể về cuộc phiêu lưu tinh thần của một ngư dân già và mối quan hệ đặc biệt giữa ông và một cậu bé trai.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet6')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet7">
+                    <img src="/images/tieuthuyet7.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Kẻ trộm sách</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">
+                                "Kẻ trộm sách" của Markus Zusak là câu chuyện đầy cảm động về một cậu bé ở Đức trong thời kỳ Chiến tranh Thế giới thứ Hai, với việc cậu trộm sách và chia sẻ chúng với những người xung quanh.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet7')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet8">
+                    <img src="/images/tieuthuyet8.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Sherlock Holmes</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">"Sherlock Holmes" là bộ truyện trinh thám nổi tiếng của Arthur Conan Doyle, tập trung vào cuộc phiêu lưu giải quyết các vụ án của thám tử tài ba Sherlock Holmes và người đồng sự trung thành của ông, Tiến sĩ John Watson.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet8')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet9">
+                    <img src="/images/tieuthuyet9.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">Tắt Đèn</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">"Tắt Đèn" của Ngô Tất Tố là một tác phẩm văn học lôi cuốn, kể về cuộc sống và tình cảm trong xã hội cổ điển Việt Nam.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet9')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="products" id="tieuthuyet10">
+                    <img src="/images/tieuthuyet10.jpg" alt="">
+                    <div class="info">
+                        <div class="describe"> 
+                            <p style="text-align: center;"><strong style="text-transform: uppercase;">5 Centimet trên giây</strong></p>
+                            <p class="b_info" style="margin: 5px 10px;">
+                                "5 Centimet Trên Giây" là câu chuyện lãng mạn về tình yêu đầy cảm xúc giữa Takaki và Akari, một cuốn sách đầy xúc động về sự chờ đợi, tình cảm và những khó khăn trong cuộc sống.</p>
+                        </div>
+                        <div class="muahang">
+                            <div class="price"> <span>210.000</span> VNĐ</div>
+                            <img src="/images/buy.png" alt="">
+                            <button onclick="giohang('tieuthuyet10')">Mua ngay</button>
+                        </div>
+                    </div>   
+                </div>
+                
+            </ul>
+        </div>
+        <div id="end">
+            <div id="end_logo">
+                <a href="Home.html"><img src="/images/Logonew.png" alt=""></a>
+                    <p>Tiệm sách của chúng tôi chuyên cung cấp những cuốn sách tốt nhất</p>
+            </div>
+            <div id="end_menu">
+                <h1>Nội dung</h1>
+                <ul>
+                    <li><a href="Home.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="intro.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div id="end_contact">
+                <h1>Liên Hệ</h1>
+                <label>Nhập Email</label>
+                <input type="email" name="email" id="email">
+                <button>Nhận tin</button>
+                <div id="infoNhom">
+                    <h2>Nhóm 5</h2>
+                    <p><strong>Thành viên: </strong>Võ Bá Lộc, Võ Bá Tài, Bùi Hữu Liêm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

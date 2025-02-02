@@ -1,0 +1,538 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.Layout{
+    width: 100%;
+    height: 100vh;
+}
+#header{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header img{
+    width: 150px;
+    margin-left: 20px;
+}
+#header #header_nav ul{
+    display: flex;
+}
+#header #header_nav ul li{
+    list-style: none;
+    padding:10px 50px 10px 0px;
+}
+#header #header_nav ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+#header #nav_mobile{
+    display: none;
+}
+
+#header #header_icon{
+    display: flex;
+}
+#header #header_icon .items{
+    margin-right: 20px;
+}
+#header #header_icon img{
+    display: inline-block;
+    width: 30px;
+}
+#section{
+    width: 98%;
+    margin: 40px auto 0px auto;
+    height: 500px;
+    background-image: url(/images/image2new.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+#section .section_left ,#section .section_right{
+    width: 50%;
+    padding: 0px 33px;
+}
+#section .section_left h2{
+    color: #FFF;
+    margin-top: 40px;
+    font-size: 48px;
+}
+#section .section_left p{
+    color: #f4f1f1;
+    font-size: 24px;
+}
+#section .section_left button{
+    margin-top: 40px;
+    width: 210px;
+    height: 40px;
+    color: white;
+    background-color: #333;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#section .section_left button:hover{
+    background-color: orange;
+}
+#section .section_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_right .tacpham{
+    margin-left: 10px;
+}
+.section_right .tacpham img{
+    width: 200px;
+    margin-left: 10px;
+}
+.section_right .tacpham .star{
+    display: flex;
+    width: 100px;
+}
+.section_right .tacpham .star img{
+    width: 30px;
+}
+#layout_products{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+}
+#layout_products h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(143, 124, 124);
+}
+#top_product .items img{
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 200px;
+    height: 283px;
+}
+#top_product .items{
+    margin-top: 30px;
+    width: 250px;
+    height: 420px;
+    background-image: url(/images/nensach4.jpg);
+    border-radius: 20px;
+    color: #FFF;
+}
+#top_product .items .price{
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+#top_product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#top_product .items .muahang{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+}
+#top_product .items .muahang button{
+    margin-top: 15px;
+    width: 130px;
+    height: 25px;
+    color: white;
+    background-color: #333;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#top_product .items .muahang button:hover{
+    background-color: red;
+}
+#top_product .items .muahang img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 7px 20px 5px 10px;
+}
+
+#sale{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+#sale #sale_number{
+    flex: 3;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(91, 76, 50);
+}
+#sale #sale_number h2{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+#sale #sale_number h1{
+    margin: 0px;
+    color: red;
+    text-transform: uppercase;
+    font-size: 200px;
+}
+#sale #sale_logo{
+    flex: 1;
+    background-image: url(/images/nensach4.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sale #sale_logo img{
+    display: block;
+    width: 280px;
+}
+#end{
+    margin-top: 100px;
+    background-image: url(/images/nensach4.jpg);
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+#end #end_logo,#end #end_menu,#end #end_contact{
+    flex: 1;
+}
+#end #end_logo img{
+    padding: 20px;
+    width: 200px;
+    margin-left: 40px;
+}
+#end #end_logo p{
+    padding: 0px;
+    margin: 10px 40px ;
+    font-size: 20px;
+}
+#end #end_menu h1{
+    padding-left: 50px;
+}
+#end #end_menu ul{
+    list-style-type: none;
+}
+#end #end_menu ul li{
+    padding: 10px;
+}
+#end #end_menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(184, 72, 72);
+}
+#end #end_contact label{
+    display: inline-block;
+    font-size: 24px;
+    font-style: normal;
+    width: 25%;
+    color: black;
+}
+#end #end_contact #email{
+    display: inline-block;
+    height: 25px;
+    width: 250px;
+}
+#end #end_contact button{
+    display: block;
+    margin:30px 0px 0px 140px;
+    width: 120px;
+    height: 25px;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#end #end_contact button:hover{
+   background-color: orange;
+   font-weight: bold;
+}
+#end #end_contact #infoNhom h1{
+    text-transform: uppercase;
+}
+#end #end_contact #infoNhom strong,p{
+    font-size: 20px;
+}
+#contact{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+#contact #contact_column_1,#contact_column_2,#contact_column_3{
+    flex: 1;
+}
+div.bgcolor {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    display: inline-block;
+}
+
+div.bgcolor h1 {
+    font-size: 75px;
+    letter-spacing: 0.5em;
+    text-indent: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-fill-color: transparent;
+    background-image: url("/images/nensanpham.jpg");
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#list_products{
+    margin: 5px;
+}
+#list_products h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+#list_products #products_book{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+    justify-content: space-around;
+}
+#list_products #products_book .products{
+    margin-top: 40px;
+    display: flex;
+    width: 500px;
+}
+#list_products #products_book .products img{
+    display: block;
+    width: 140px;
+    height: 220px;
+}
+#list_products #products_book .products .info .describe .b_info{
+    height: 120px;
+}
+#list_products #products_book .products .info .muahang{
+    display: flex;
+    margin-left: 20px;
+    padding-top: 10px;
+} 
+
+#list_products #products_book .products .info .muahang .price{
+    padding: 0px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+#list_products #products_book .products .info .muahang img{
+    display: block;
+    width: 26px;
+    height: 26px;
+    padding-right: 20px;
+}
+#list_products #products_book .products .info .muahang button{
+    outline: none;
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    background-color:#333;
+    color: white;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: none;
+}
+#list_products #products_book .products .info .muahang button:hover{
+    background-color: orange;
+}
+#list_products #products_book .products .info .price{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+#intro #intro_header{
+    text-align: center;
+}
+
+
+#intro #intro_section{
+    padding: 20px 185px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#intro #intro_section .intro_section_items{
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+}
+#intro #intro_section .intro_section_items h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+#intro #intro_section .intro_section_items p{
+    margin: 10px;
+    font-size: 20px;
+}
+#intro #intro_end{
+    width: 70%;
+    margin: 20px auto;
+    background-color: rgb(175, 222, 177);
+}
+#intro #intro_end h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 20px;
+}
+#intro #intro_end p{
+    font-size: 20px;
+    padding: 10px;
+}
+div.Layout #contact{
+    background: linear-gradient(to bottom, #c8fb8f, #fdb148);
+    width: 100%;
+    height: 550px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+div#contact  #frmcontact{
+    width: 100%;
+}
+
+div#contact #frmcontact #contactfield {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#contactfield #lbcontact{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#contactfield #infocontact{
+    width: 100%;
+    margin-left: 25px;
+}
+#contactfield #infocontact label{
+    margin-top: 5px;
+}
+#contactfield #infocontact input{
+    width: 90%;
+    border: rgb(188, 178, 178) 2px solid;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    margin-top: 2px;
+}
+#contactfield #infocontact textarea{
+    width: 90%;
+    border: rgb(188, 178, 178) 2px solid;
+    border-radius: 5px;
+    height: 80px;
+    outline: none;
+    margin-top: 2px;
+}
+#contactfield #submit{
+    margin-left: 42%;
+    margin-top: 10px;
+    width: 120px;
+    height: 38px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(250, 181, 52);
+    font-size: 15px;
+    transition: 0.4s;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0px;
+}
+#contactfield #submit:hover{
+    background-color:rgb(219, 147, 11);
+    cursor: pointer;
+    color: white;
+}
+#cart_Layout{
+    padding-bottom: 200px;
+}
+#cart_table{
+    border: 4px solid green;
+    border-collapse: collapse;
+    width: 1000px;
+}
+#cart_table tr th,#cart_table tr td{
+    border: 2px solid green;
+    text-align: center;
+    vertical-align: middle;
+}
+#cart_table tr td img{
+    width: 100px;
+    display: block;
+    margin: 0px auto;
+}
+#cart_table tr td input[type='number']{
+    text-align: center;
+    border: 1px solid black;
+}
+div.Layout div#cart_Layout h1#titleWelcome{
+    margin-left: 20px;
+}
+div.Layout div#cart_Layout h3#titleGiohang{
+    margin-left: 450px;
+}
+#cart_table tr th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+#cart_Layout div#empty button{
+    margin-top: 10px;
+    margin-left: 62%;
+    height: 30px;
+     width: 90px;
+    color: white;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: black;
+    transition: 0.2s;
+}
+#cart_Layout div#empty button:hover{
+    color: orange;
+}
