@@ -1,0 +1,305 @@
+@media only screen and (max-width: 48.1875em){
+    #header img{
+        width: 100px;
+    }
+    #header #nav_list_bars #close{
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+    }
+    #header #nav_list_bars #nav_icon{
+        margin: 40px 0px 10px 20px;
+        display: flex;
+    }
+    #header #nav_list_bars .nav_bar_icon img{
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+    }
+    #header #header_nav ul ,#header #header_icon{
+        display: none;
+    }
+    #header #nav_mobile{
+        display: block;
+        position: relative;
+        margin-right: 10px;
+    }
+    #header #nav_mobile div#nav_list_bars ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color:grey;
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    #section{
+        position: static;
+        margin: 40px auto 0px auto;
+        background-image: url(/images/image2new.jpg);
+        border-radius: 20px;
+        height: 250px;
+    }
+    #section .section_left{
+        width: 100%;
+    }
+    #nav__bars{
+        display: none;
+    }
+    #overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+        display: none;
+    }
+    input#test:checked ~ #overlay {
+        display: block;
+    }
+    input#test:checked ~ #nav_list_bars{
+        transform: translateX(0%);
+    }
+    #nav_list_bars{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 180px;
+        background-color: #fff;
+        transform: translateX(100%);
+    }
+    #nav_list_bars ul li{
+        list-style-type: none;
+        padding: 10px 0px;
+    }
+    #section .section_left h2{
+        margin: 10px 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #section .section_left p{
+        font-size: 14px;
+    }
+    #section .section_right{
+        display: none;
+    }
+    #section .section_left button{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    #layout_products{
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    #layout_products h2{
+        font-size: 20px;
+    }
+    #top_product{
+        padding-left: 0px;
+        justify-content: space-evenly;
+    }
+    #top_product .items img{
+        display: block;
+        margin: 10px auto 0px auto;
+        width: 100px;
+        height: 150px;
+    }
+    #top_product .items{
+        margin-top: 10px;
+        width: 130px;
+        height: 220px;
+        margin-right: 10px;
+    }
+    #top_product .items .price{
+        font-size: 14px;
+    }
+    #top_product .items .muahang{
+        height: 25px;
+    }
+    #top_product .items .muahang img{
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin: 5px auto 5px 20px;
+    }
+    #top_product .items .muahang button{
+        margin-top: 8px;
+        margin-right: 17px;
+        width: 70px;
+        height: 15px;
+        font-size: 10px;
+    }
+    #sale{
+        height: 100px;
+    }
+    #sale #sale_number h2{
+        font-size: 16px;
+        margin: 5px;
+    }
+    #sale #sale_number h1{
+        margin-top: 2px;
+        font-size: 50px;
+    }
+    #sale #sale_logo img{
+        width: 50px;
+    }
+    #end{
+        margin-top: 10px;
+        height: 150px;
+    }
+    #end #end_menu{
+        display: none;
+    }
+    #end #end_logo img{
+        margin-top: 10px;
+        padding: 0px;
+        width: 100px;
+        margin-left: 10px;
+    }
+    #end #end_logo p{
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        width: 140px;
+        margin-left: 5px;
+    }
+    #end #end_contact #infoNhom h1{
+        font-size: 16px;
+    }
+    #end #end_contact #infoNhom p{
+        font-size: 14px;
+        width: 160px;
+    }
+    #end #end_contact label,#end #end_contact h1{
+        display: none;
+    }
+    #end #end_contact #email{
+        display: none;
+    }
+    #end #end_contact button{
+        display:none;
+    }
+    #end #end_contact #infoNhom h2{
+        margin: 10px 0px;
+        text-align: center;
+    }
+    #end #end_contact #infoNhom strong,p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    div.bgcolor {
+        display: none;
+    }
+    #list_products{
+        margin: 5px;
+    }
+    #list_products .selectProducts{
+        margin-left: 5px !important;
+    }
+    #list_products #products_book{
+        margin: 0px;
+        padding: 0px;
+    }
+     #list_products #products_book .products{
+        margin-top: 20px;
+    }
+    #list_products #products_book .products img{
+        width: 140px;
+        height: 190px;
+    }
+    #list_products #products_book .products .info .describe .b_info{
+        height: 70px;
+        width: 215px;
+    }
+    #list_products #products_book .products .info .muahang{
+        margin-top: 30px;
+        margin-left: 2px;
+        padding-top: 10px;
+    }
+    #list_products #products_book .products .info .muahang .price{
+        margin-left: 7px;
+        margin-top: 8px;
+        padding: 0px;
+        font-size: 16px;
+        margin-right: 0px;
+        text-decoration: underline;
+
+    }
+    #list_products #products_book .products .info .muahang img{
+        display: none;
+    }
+    #list_products #products_book .products .info .muahang button{
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+        margin-left: 8px;
+    }
+    #intro #intro_header h1{
+        font-size: 20px;
+    }
+    #intro #intro_section{
+        padding: 0px;
+        flex-direction: column;
+    }
+    #intro #intro_section .intro_section_items{
+        width: 95%;
+        height: 180px;
+        border-radius: 5px;
+    }
+    #intro #intro_section .intro_section_items h3{
+        font-size: 16px;
+    }
+    #intro #intro_section .intro_section_items p{
+        margin: 5px;
+        font-size: 14px;
+    }
+    #intro #intro_end{
+        width: 95%;
+        height: 180px;
+        border-radius: 5px;
+    }
+    #intro #intro_end h3{
+        padding: 10px;
+        font-size: 20px;
+        margin: 0px;
+    }
+    #intro #intro_end p{
+        margin: 5px;
+        padding: 0px;
+        font-size: 14px;
+    }
+    #contactfield #infocontact{
+        margin-left: 10px;
+    }
+    #contactfield #submit{
+        margin-left: 27%;
+    }
+    #cart_Layout #cart_table{
+        width: 98%;
+        border: 2px solid gray;
+        border-radius: 2px;
+        margin: auto 2px auto 2px;
+    }
+    #cart_Layout #cart_table img{
+        width: 50px;
+        
+    }
+    div.Layout div#cart_Layout h1#titleWelcome{
+        margin-left: 14px;
+    }
+    div.Layout div#cart_Layout h3#titleGiohang{
+        margin-left: 150px;
+    }
+    #cart_Layout div#empty button{
+    margin-top: 10px;
+    margin-left: 87%;
+    height: 30px;
+    width: 42px;
+    font-size: 12px;
+}
+
+
+}
