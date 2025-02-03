@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giỏ Hàng</title>
-    <link rel="stylesheet" href="Layout.css">
-    <link rel="stylesheet" href="reponsive.css">
-    <script src="https://kit.fontawesome.com/038a51cfcd.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
+    <link rel="stylesheet" href="Layout.css" />
+    <link rel="stylesheet" href="reponsive.css" />
+    <script
+      src="https://kit.fontawesome.com/038a51cfcd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="Layout">
-        <div id="header">
-            <a href="Home.html"><img src="/images/Logonew.png" alt="Logo"></a>
-            
-            
-            <div id="header_nav">
-                <ul>
-                    <li><a href="Home.html">Trang Chủ</a></li>
-                    <li><a href="products.html">Sản Phẩm</a></li>
-                    <li><a href="intro.html">Giới Thiệu</a></li>
-                    <li><a href="contact.html">Liên Hệ</a></li>
-                </ul>
-            </div>
-            <div id="header_icon">
-                <div class="items">
-                    <a href=""><img src="/images/ring.png" alt="Ring"></a>
-                </div>
-                <div class="items">
-                    <a href=""><img src="/images/BuyIcon.png" alt="BuyIcon"></a>
-                </div>
-                <div class="items">
-                    <a href=""><img src="/images/Person.png" alt="PersonIcon"></a>
-                </div>
-            </div>
-            <div id="nav_mobile">
-                <label for="test" class="nav_bars">
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                </label>
-                <input type="checkbox" hidden id="test" name="test">
-                <label for="test" id="overlay"></label>
-                <div id="nav_list_bars">
-                    <label for="test" id="close">
-                        <i class="fa-solid fa-xmark fa-2x"></i>
-                    </label>
-                    <div id="nav_icon">
-                        <div class="nav_bar_icon">
-                            <a href=""><img src="/images/Person.png" alt="PersonIcon"></a>
-                        </div>
-                        <div class="nav_bar_icon">
-                            <a href="cart.html"><img src="/images/BuyIcon.png" alt="BuyIcon"></a>
-                        </div>
-                    </div>
-                    <hr>
-                    <ul>
-                        <li><a href="Home.html">Trang Chủ</a></li>
-                        <li><a href="products.html">Sản Phẩm</a></li>
-                        <li><a href="intro.html">Giới Thiệu</a></li>
-                        <li><a href="contact.html">Liên Hệ</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div id="header">
+        <a href="index.html"><img src="images/Logonew.png" alt="Logo" /></a>
+
+        <div id="header_nav">
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="products.html">Sản Phẩm</a></li>
+            <li><a href="intro.html">Giới Thiệu</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+          </ul>
         </div>
-        <div id="cart_Layout">
-            <h1 id="titleWelcome">Chào Mừng tới cửa hàng BookStore</h1>
-            <h3  id="titleGiohang" style="font-family: Arial, Helvetica, sans-serif; color: red;text-decoration: underline;">Giỏ Hàng</h3>
-            <table id="cart_table">
-                <tr>
-                    <th colspan="3">Sản Phẩm</th>
-                    <th>Đơn giá</th>
-                    <th>Số Lượng</th>
-                    <th>Thành Tiền</th>
-                    <th>Xóa</th>
-                </tr>
-                <tbody id="mycart">
-                    
-                </tbody>
-                
-            </table>
-            <div id="empty">
-                <button onclick="xoatatca()">Clear</button>
-            </div>
+        <div id="header_icon">
+          <div class="items">
+            <a href=""><img src="images/ring.png" alt="Ring" /></a>
+          </div>
+          <div class="items">
+            <a href=""><img src="images/BuyIcon.png" alt="BuyIcon" /></a>
+          </div>
+          <div class="items">
+            <a href=""><img src="images/Person.png" alt="PersonIcon" /></a>
+          </div>
         </div>
-        <div id="end">
-            <div id="end_logo">
-                    <a href="Home.html"><img src="/images/Logonew.png" alt=""></a>
-                    <p>Tiệm sách của chúng tôi chuyên cung cấp những cuốn sách tốt nhất</p>
+        <div id="nav_mobile">
+          <label for="test" class="nav_bars">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </label>
+          <input type="checkbox" hidden id="test" name="test" />
+          <label for="test" id="overlay"></label>
+          <div id="nav_list_bars">
+            <label for="test" id="close">
+              <i class="fa-solid fa-xmark fa-2x"></i>
+            </label>
+            <div id="nav_icon">
+              <div class="nav_bar_icon">
+                <a href=""><img src="images/Person.png" alt="PersonIcon" /></a>
+              </div>
+              <div class="nav_bar_icon">
+                <a href="cart.html"
+                  ><img src="images/BuyIcon.png" alt="BuyIcon"
+                /></a>
+              </div>
             </div>
-            <div id="end_menu">
-                <h1>Nội dung</h1>
-                <ul>
-                    <li><a href="Home.html">Trang Chủ</a></li>
-                    <li><a href="products.html">Sản Phẩm</a></li>
-                    <li><a href="intro.html">Giới thiệu</a></li>
-                    <li><a href="contact.html">Liên Hệ</a></li>
-                </ul>
-            </div>
-            <div id="end_contact">
-                <h1>Liên Hệ</h1>
-                <label>Nhập Email</label>
-                <input type="email" name="email" id="email">
-                <button>Nhận tin</button>
-                <div id="infoNhom">
-                    <h2>Nhóm 5</h2>
-                    <p><strong>Thành viên: </strong>Võ Bá Lộc, Võ Bá Tài, Bùi Hữu Liêm</p>
-                </div>
-            </div>
+            <hr />
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="products.html">Sản Phẩm</a></li>
+              <li><a href="intro.html">Giới Thiệu</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div id="cart_Layout">
+        <h1 id="titleWelcome">Chào Mừng tới cửa hàng BookStore</h1>
+        <h3
+          id="titleGiohang"
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            text-decoration: underline;
+          "
+        >
+          Giỏ Hàng
+        </h3>
+        <table id="cart_table">
+          <tr>
+            <th colspan="3">Sản Phẩm</th>
+            <th>Đơn giá</th>
+            <th>Số Lượng</th>
+            <th>Thành Tiền</th>
+            <th>Xóa</th>
+          </tr>
+          <tbody id="mycart"></tbody>
+        </table>
+        <div id="empty">
+          <button onclick="xoatatca()">Clear</button>
+        </div>
+      </div>
+      <div id="end">
+        <div id="end_logo">
+          <a href="index.html"><img src="images/Logonew.png" alt="" /></a>
+          <p>
+            Tiệm sách của chúng tôi chuyên cung cấp những cuốn sách tốt nhất
+          </p>
+        </div>
+        <div id="end_menu">
+          <h1>Nội dung</h1>
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="products.html">Sản Phẩm</a></li>
+            <li><a href="intro.html">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div id="end_contact">
+          <h1>Liên Hệ</h1>
+          <label>Nhập Email</label>
+          <input type="email" name="email" id="email" />
+          <button>Nhận tin</button>
+          <div id="infoNhom">
+            <h2>Nhóm 5</h2>
+            <p>
+              <strong>Thành viên: </strong>Võ Bá Lộc, Võ Bá Tài, Bùi Hữu Liêm
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-     
+
     <script src="js/cart.js"></script>
-        <script>
-            showMycart();
-        </script>
-</body>
+    <script>
+      showMycart();
+    </script>
+  </body>
 </html>
